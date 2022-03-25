@@ -1,0 +1,11 @@
+{
+    "name": "volalservice",
+    "version": "18.11.0",
+    "description": "volalservice",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "private": true,
+    "dependencies": {},
+    "engines": {
+        "node": ">=16"
+    }
+}
