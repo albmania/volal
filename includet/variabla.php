@@ -1,6 +1,6 @@
 <?php
 $GLOBALS['MAIN_WEB_URL']='https://volalservice.al/';
-//$GLOBALS['WEB_URL']='http://pgfront.amg/';
+$GLOBALS['WEB_URL']='https://volalservice.al/';
 $GLOBALS['WEB_URL_EN']='https://volalservice.al/en/';
 $GLOBALS['WEB_URL_FRONT']='https://volalservice.al/';
 $GLOBALS['SOC_FCB']='https://www.facebook.com/volalservice';

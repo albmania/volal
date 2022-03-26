@@ -7,7 +7,6 @@
 $gjuha = array();
 
 //URL
-$GLOBALS['WEB_URL']='http://pgfront.amg/en/';
 $GLOBALS['URL_SHERBIMETKAT']='services/';
 $GLOBALS['URL_SHERBIMETALL']='services/';
 $GLOBALS['URL_FAQET']='pages/';

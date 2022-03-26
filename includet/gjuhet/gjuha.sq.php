@@ -7,7 +7,6 @@
 $gjuha = array();
 
 //URL
-$GLOBALS['WEB_URL']='https://volalservice.al/';
 $GLOBALS['URL_SHERBIMETKAT']='sherbimet/';
 $GLOBALS['URL_BLOG']='blog/';
 $GLOBALS['URL_KONTAKTET']='kontaktet/';

@@ -29,7 +29,7 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-4 col-sm-4">
-                  <a class="ts-logo" href="<?php echo $WEB_URL;?>" class="ts-logo">
+                  <a class="ts-logo" href="<?php if $gjuhaR='en' {echo $WEB_URL_EN; } else {echo $WEB_URL;} ;?>" class="ts-logo">
                      <img src="<?php echo $MAIN_WEB_URL;?>asetet/images/logo/logo.png" alt="Vol-AL Service">
                   </a>
                </div> <!-- Col End -->
