@@ -14,12 +14,12 @@ if ($Language && function_exists(PROJECT_NAMESPACE . "Config") && $Language->Lan
 
 // Navbar menu
 $topMenu = new Menu("navbar", true, true);
-$topMenu->addMenuItem(22, "mci_Kreu", $MenuLanguage->MenuPhrase("22", "MenuText"), $MenuRelativePath . "/Kreu", -1, "", IsLoggedIn(), false, true, "fas fa-home", "", true, false);
+$topMenu->addMenuItem(22, "mci_Kreu", $MenuLanguage->MenuPhrase("22", "MenuText"), $MenuRelativePath . "/menaxhimi/Kreu", -1, "", IsLoggedIn(), false, true, "fas fa-home", "", true, false);
 $topMenu->addMenuItem(75, "mci_Faqja_Kryesore", $MenuLanguage->MenuPhrase("75", "MenuText"), $MenuRelativePath . "/", -1, "", IsLoggedIn(), false, true, "fas fa-globe-europe", "", true, false);
-$topMenu->addMenuItem(17, "mci_Makina_ne_Shitje", $MenuLanguage->MenuPhrase("17", "MenuText"), $MenuRelativePath . "i/MakinaShitjeList", -1, "", IsLoggedIn(), false, true, "fas fa-car", "", true, false);
-$topMenu->addMenuItem(16, "mci_Makina_Importi", $MenuLanguage->MenuPhrase("16", "MenuText"), $MenuRelativePath . "/MakinaImportiList", -1, "", IsLoggedIn(), false, true, "fas fa-globe-europe", "", true, false);
-$topMenu->addMenuItem(18, "mci_Klientet", $MenuLanguage->MenuPhrase("18", "MenuText"), $MenuRelativePath . "/KlientList", -1, "", IsLoggedIn(), false, true, "fas fa-user-circle", "", true, false);
-$topMenu->addMenuItem(19, "mci_Makinat", $MenuLanguage->MenuPhrase("19", "MenuText"), $MenuRelativePath . "/MakinaList", -1, "", IsLoggedIn(), false, true, "fas fa-car", "", true, false);
+$topMenu->addMenuItem(17, "mci_Makina_ne_Shitje", $MenuLanguage->MenuPhrase("17", "MenuText"), $MenuRelativePath . "/menaxhimi/MakinaShitjeList", -1, "", IsLoggedIn(), false, true, "fas fa-car", "", true, false);
+$topMenu->addMenuItem(16, "mci_Makina_Importi", $MenuLanguage->MenuPhrase("16", "MenuText"), $MenuRelativePath . "/menaxhimi/MakinaImportiList", -1, "", IsLoggedIn(), false, true, "fas fa-globe-europe", "", true, false);
+$topMenu->addMenuItem(18, "mci_Klientet", $MenuLanguage->MenuPhrase("18", "MenuText"), $MenuRelativePath . "/menaxhimi/KlientList", -1, "", IsLoggedIn(), false, true, "fas fa-user-circle", "", true, false);
+$topMenu->addMenuItem(19, "mci_Makinat", $MenuLanguage->MenuPhrase("19", "MenuText"), $MenuRelativePath . "/menaxhimi/MakinaList", -1, "", IsLoggedIn(), false, true, "fas fa-car", "", true, false);
 echo $topMenu->toScript();
 
 // Sidebar menu
@@ -55,10 +55,10 @@ $sideMenu->addMenuItem(9, "mi_stafi", $MenuLanguage->MenuPhrase("9", "MenuText")
 $sideMenu->addMenuItem(3, "mi_perdoruesit", $MenuLanguage->MenuPhrase("3", "MenuText"), $MenuRelativePath . "PerdoruesitList", 47, "", AllowListMenu('{5DBF31CF-CE07-42F2-AACA-F5EB0A61CE6E}perdoruesit'), false, false, "fas fa-user-lock", "", false, true);
 $sideMenu->addMenuItem(10, "mi_userlevelpermissions", $MenuLanguage->MenuPhrase("10", "MenuText"), $MenuRelativePath . "UserlevelpermissionsList", 3, "", AllowListMenu('{5DBF31CF-CE07-42F2-AACA-F5EB0A61CE6E}userlevelpermissions'), false, false, "", "", false, true);
 $sideMenu->addMenuItem(11, "mi_userlevels", $MenuLanguage->MenuPhrase("11", "MenuText"), $MenuRelativePath . "UserlevelsList", 3, "", AllowListMenu('{5DBF31CF-CE07-42F2-AACA-F5EB0A61CE6E}userlevels'), false, false, "", "", false, true);
-$sideMenu->addMenuItem(22, "mci_Kreu", $MenuLanguage->MenuPhrase("22", "MenuText"), $MenuRelativePath . "/Kreu", -1, "", IsLoggedIn(), false, true, "fas fa-home", "", true, true);
+$sideMenu->addMenuItem(22, "mci_Kreu", $MenuLanguage->MenuPhrase("22", "MenuText"), $MenuRelativePath . "/menaxhimi/Kreu", -1, "", IsLoggedIn(), false, true, "fas fa-home", "", true, true);
 $sideMenu->addMenuItem(75, "mci_Faqja_Kryesore", $MenuLanguage->MenuPhrase("75", "MenuText"), $MenuRelativePath . "/", -1, "", IsLoggedIn(), false, true, "fas fa-globe-europe", "", true, true);
-$sideMenu->addMenuItem(17, "mci_Makina_ne_Shitje", $MenuLanguage->MenuPhrase("17", "MenuText"), $MenuRelativePath . "i/MakinaShitjeList", -1, "", IsLoggedIn(), false, true, "fas fa-car", "", true, true);
-$sideMenu->addMenuItem(16, "mci_Makina_Importi", $MenuLanguage->MenuPhrase("16", "MenuText"), $MenuRelativePath . "/MakinaImportiList", -1, "", IsLoggedIn(), false, true, "fas fa-globe-europe", "", true, true);
-$sideMenu->addMenuItem(18, "mci_Klientet", $MenuLanguage->MenuPhrase("18", "MenuText"), $MenuRelativePath . "/KlientList", -1, "", IsLoggedIn(), false, true, "fas fa-user-circle", "", true, true);
-$sideMenu->addMenuItem(19, "mci_Makinat", $MenuLanguage->MenuPhrase("19", "MenuText"), $MenuRelativePath . "/MakinaList", -1, "", IsLoggedIn(), false, true, "fas fa-car", "", true, true);
+$sideMenu->addMenuItem(17, "mci_Makina_ne_Shitje", $MenuLanguage->MenuPhrase("17", "MenuText"), $MenuRelativePath . "/menaxhimi/MakinaShitjeList", -1, "", IsLoggedIn(), false, true, "fas fa-car", "", true, true);
+$sideMenu->addMenuItem(16, "mci_Makina_Importi", $MenuLanguage->MenuPhrase("16", "MenuText"), $MenuRelativePath . "/menaxhimi/MakinaImportiList", -1, "", IsLoggedIn(), false, true, "fas fa-globe-europe", "", true, true);
+$sideMenu->addMenuItem(18, "mci_Klientet", $MenuLanguage->MenuPhrase("18", "MenuText"), $MenuRelativePath . "/menaxhimi/KlientList", -1, "", IsLoggedIn(), false, true, "fas fa-user-circle", "", true, true);
+$sideMenu->addMenuItem(19, "mci_Makinat", $MenuLanguage->MenuPhrase("19", "MenuText"), $MenuRelativePath . "/menaxhimi/MakinaList", -1, "", IsLoggedIn(), false, true, "fas fa-car", "", true, true);
 echo $sideMenu->toScript();
