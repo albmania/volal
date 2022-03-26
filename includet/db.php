@@ -1,8 +1,8 @@
  <?php
 $servername = "localhost";
-$username = "volalser_sys";
-$password = "6Uzd_b98";
-$dbtable = "volalser_sys";
+$username = "root";
+$password = "";
+$dbtable = "volal";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbtable);

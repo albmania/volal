@@ -1,0 +1,59 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_URI} \.(gif|jpg|jpeg|png|ico|webp)$ 
+RewriteRule (.*) /imazhe/pafoto.png [L]
+
+
+#(.+) => per gjithcka
+
+#Faqet
+RewriteRule   ^([A-Za-z0-9--]+)-([0-9-]+)/?$   faqe.php?faqeEmri=$1&faqeid=$2 [L]
+
+#Harta
+RewriteRule   ^servis-volvo-sherbimet/?$   sherbimet.php [L]
+RewriteRule   ^rreth-nesh/?$   rrethnesh.php [L]
+RewriteRule   ^makina-ne-shitje/?$   makina.php [L]
+RewriteRule   ^pjese-kembimi-volvo/?$   pjeset.php [L]
+RewriteRule   ^kontaktet/?$   kontaktet.php [L]
+
+RewriteRule   ^makina-ne-shitje/shitet-([A-Za-z0-9--]+)-([A-Za-z0-9--]+)-([A-Za-z0-9--]+)-([A-Za-z0-9--]+)-([0-9-]+)/?$   makina.php?mmarkaMarka=$1&mmodeliModeli=$2&mtipiTipi=$3&mshitjeVitiProdhimit=$4&mshitjeID=$5 [L]
+
+
+
+#Blog - Kategori
+RewriteRule   ^blog/([A-Za-z0-9--]+)-([0-9-]+)/?$   blog.php?blogkatemri=$1&blogkatid=$2 [L]
+#Blog - Tek
+RewriteRule   ^blog/([A-Za-z0-9--]+)-([0-9-]+)/([A-Za-z0-9--]+)-([0-9-]+)/?$   blog.php?blogkatemrip=$1&blogkatidp=$2&blogemri=$3&blogID=$4 [L]
+#Blog - ALL
+RewriteRule   ^blog/?$   blog.php [L]
+
+
+
+
+
+#*************************************************************************************************
+# Versioni ANGLISHT
+#*************************************************************************************************
+
+# /en/
+RewriteRule   ^en/?$   index.php?gjuha=en [L]
+
+#Faqet
+RewriteRule   ^en/pages/([A-Za-z0-9--]+)-([0-9-]+)/?$   faqet.php?faqeEmri=$1&faqeid=$2 [L]
+
+#Njoftimet - Kategori
+RewriteRule   ^en/article-categories/([A-Za-z0-9--]+)-([0-9-]+)/?$   njoftimet.php?njoftimekatEmertimi=$1&njkatid=$2 [L]
+#Njoftimet - Njoftimi
+RewriteRule   ^en/articles/([A-Za-z0-9--]+)-([0-9-]+)/([A-Za-z0-9--]+)-([0-9-]+)/?$   njoftimet.php?njoftimekatEmertimi=$1&njoftimekatID=$2&njoftimTitulli=$3&njofid=$4 [L]
+#Njoftimet - ALL
+RewriteRule   ^en/articles/?$   njoftimet.php [L]
+
+#Harta
+RewriteRule   ^en/municiplaity-map/?$   harta.php [L]
+
