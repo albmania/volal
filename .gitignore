@@ -1,5 +1,6 @@
 /menaxhimi/src/config.production.php
+/menaxhimi/src/config.development.php
 /includet/db.php
 /includet/variabla.php
-/menaxhimi/vendor/*
-/ngarkime/*
+/menaxhimi/vendor/
+/ngarkime/
