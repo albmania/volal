@@ -22,13 +22,13 @@ return [
     },
     "audit" => function (ContainerInterface $c) {
         $logger = new Logger("audit"); // For audit trail
-        $logger->pushHandler(new AuditTrailHandler("/auditlogs/audit.log"));
+        $logger->pushHandler(new AuditTrailHandler("auditlogs/audit.log"));
         return $logger;
     },
     "log" => function (ContainerInterface $c) {
         global $RELATIVE_PATH;
         $logger = new Logger("log");
-        $logger->pushHandler(new RotatingFileHandler($RELATIVE_PATH . "/auditlogs/log.log"));
+        $logger->pushHandler(new RotatingFileHandler($RELATIVE_PATH . "auditlogs/log.log"));
         return $logger;
     },
     "sqllogger" => function (ContainerInterface $c) {

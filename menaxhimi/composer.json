@@ -36,7 +36,6 @@
 		"delight-im/cookie": "^3.4.0",
 		"selective/samesite-cookie": "~0.3.0",
 		"imangazaliev/didom": "^1.16.3",
-		"psr/log": "^1.1.4",
 		"hkvstore/dompdf": "~1.1.0",
 		"ckeditor/ckeditor": "dev-full/stable"
 	},

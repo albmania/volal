@@ -145,7 +145,7 @@ $CONFIG = [
 
     // General
     "UNFORMAT_YEAR" => 50, // Unformat year
-    "RANDOM_KEY" => 'OdO2ju1n5plCBtc3', // Random key for encryption
+    "RANDOM_KEY" => '30XpEU49X1NY9tqd', // Random key for encryption
     "ENCRYPTION_KEY" => '', // Encryption key for data protection
     "PROJECT_STYLESHEET_FILENAME" => "css/volalservice.css", // Project stylesheet file name
     "USE_COMPRESSED_STYLESHEET" => true, // Compressed stylesheet
@@ -377,8 +377,8 @@ $CONFIG = [
     "USER_PROFILE_IMAGE" => "UserImage",
 
     // Email
-    "SENDER_EMAIL" => "kontakt@albmania.com", // Sender email address
-    "RECIPIENT_EMAIL" => "kontakt@albmania.com", // Recipient email address
+    "SENDER_EMAIL" => "kontakt@vol.al", // Sender email address
+    "RECIPIENT_EMAIL" => "kontakt@vol.al", // Recipient email address
     "MAX_EMAIL_RECIPIENT" => 3,
     "MAX_EMAIL_SENT_COUNT" => 3,
     "EXPORT_EMAIL_COUNTER" => SESSION_STATUS . "_EmailCounter",
@@ -501,7 +501,7 @@ $CONFIG = [
     "RESIZE_OPTIONS" => ["keepAspectRatio" => false, "resizeUp" => !true, "jpegQuality" => 100],
 
     // Audit trail
-    "AUDIT_TRAIL_PATH" => "/auditlogs/", // Audit trail path (relative to app root)
+    "AUDIT_TRAIL_PATH" => "auditlogs/", // Audit trail path (relative to app root)
 
     // Import records
     "IMPORT_CSV_DELIMITER" => ",", // Import to CSV delimiter

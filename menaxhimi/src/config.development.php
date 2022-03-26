@@ -10,14 +10,14 @@ return [
     ],
     "SMTP" => [
         "PHPMAILER_MAILER" => "smtp", // PHPMailer mailer
-        "SERVER" => "smtp.zoho.eu", // SMTP server
+        "SERVER" => "vol.al", // SMTP server
         "SERVER_PORT" => 587, // SMTP server port
         "SECURE_OPTION" => "tls",
-        "SERVER_USERNAME" => "kontakt@albmania.com", // SMTP server user name
-        "SERVER_PASSWORD" => "askme@\$)*1986", // SMTP server password
+        "SERVER_USERNAME" => "kontakt@vol.al", // SMTP server user name
+        "SERVER_PASSWORD" => "vol2022al", // SMTP server password
     ],
     "JWT" => [
-        "SECRET_KEY" => "6ND7xq5UeHMdRf98", // API Secret Key
+        "SECRET_KEY" => "c81liBon52YQSHBb", // API Secret Key
         "ALGORITHM" => "HS512", // API Algorithm
         "AUTH_HEADER" => "X-Authorization", // API Auth Header (Note: The "Authorization" header is removed by IIS, use "X-Authorization" instead.)
         "NOT_BEFORE_TIME" => 0, // API access time before login
