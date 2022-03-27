@@ -128,7 +128,7 @@ function full_url( $s, $use_forwarded_host = false ) {
 /***********************************************************************/
 // Gjenerimi i butonave share
 /***********************************************************************/
-function butonatShare($linku='/', $gjuhaShare, $MAIN_WEB_URL=''){	
+/*function butonatShare($linku='/', $gjuhaShare, $MAIN_WEB_URL=''){	
 ?>	
 					<section class="socials socials--gray share-link">
 						<hr />
@@ -145,7 +145,7 @@ function butonatShare($linku='/', $gjuhaShare, $MAIN_WEB_URL=''){
 					</section>
 <?php	
 }
-
+*/
 /***********************************************************************/
 // Funksion per shfaqjen e bannerave sipas pozicionit
 /***********************************************************************/

@@ -187,11 +187,11 @@ include ('includet/head.php');
              <?php
 
     $sql = "SELECT * from makina_shitje, makina_marka, makina_modeli, makina_tipi 
-			WHERE mshitjeAktiv='Po' AND mshitjeIndex='Po' AND mshitjeShitur='Jo' 
+			WHERE mshitjeAktiv='Po' 
             AND mshitjeMarka=mmarkaID 
             AND mshitjeModeli=mmodeliID
             AND mshitjeTipi=mtipiID
-            ORDER BY mshitjeID DESC LIMIT 9";
+            ORDER BY mshitjeShitur DESC";
 	//echo $sql;
 	$result = mysqli_query($conn, $sql);
 	if (mysqli_num_rows($result) > 0) {
